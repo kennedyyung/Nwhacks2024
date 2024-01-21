@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css'
 import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar";
+import SymptomButton from "../Components/SymptomButton"
+import DataButton from "../Components/DataButton";
 
 
 
@@ -46,22 +48,29 @@ function Tracking() {
 
                             <div>
                                 <p>Symptoms check</p>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">No Symptoms</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cough</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Dizziness</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Headache</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Fatigue</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sore Throat</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Muscle Aches</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Heartburn</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Fever</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Nasal Congestion</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Runny Nose</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Nausea</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Constipation</button>
-                                <button type="button" class="bg-white border border-text_colour focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Diarrhea</button>
+                                <div className="flex flex-wrap">
+  <SymptomButton buttonName="No Symptoms" />
+  <SymptomButton buttonName="Cough" />
+  <SymptomButton buttonName="Dizziness" />
+  <SymptomButton buttonName="Headache" />
+  <SymptomButton buttonName="Fatigue" />
+  <SymptomButton buttonName="Sore Throat" />
+  <SymptomButton buttonName="Muscle Aches" />
+  <SymptomButton buttonName="Heartburn" />
+  <SymptomButton buttonName="Fever" />
+  <SymptomButton buttonName="Nasal Congestion" />
+  <SymptomButton buttonName="Runny Nose" />
+  <SymptomButton buttonName="Nausea" />
+  <SymptomButton buttonName="Constipation" />
+  <SymptomButton buttonName="Diarhea" />
+</div>
+
                             </div>
-                            
+                            <div className="flex items-center justify-center">
+                                <Link to="/">
+                                <DataButton />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
