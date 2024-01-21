@@ -68,12 +68,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = __importDefault(require("express"));
 var class_validator_1 = require("class-validator");
 var cors_1 = __importDefault(require("cors"));
 var fs = __importStar(require("fs-extra"));
+var express = require("express");
+var bodyParser = require("body-parser");
 var path = require('path');
-var app = (0, express_1.default)();
+var app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 var RequestBody = /** @class */ (function () {
     function RequestBody(name) {
         this.name = name;
@@ -96,7 +99,7 @@ var ResponseBody = /** @class */ (function () {
 // Enable cors to be able to reach the backend on localhost:8080 while running React.js in dev mode on localhost:3000
 // You might want to disbale this on production.
 app.use((0, cors_1.default)());
-app.use(express_1.default.json());
+app.use(express.json());
 // app.post('/api', async function(req: Request, res: Response) {
 //     let body = plainToClass(RequestBody, req.body as Object);
 //     let validationErrors = await validate(body);
@@ -111,17 +114,16 @@ app.use(express_1.default.json());
 // });
 app.post("/enterData", function (req, res) {
     return __awaiter(this, void 0, void 0, function () {
-        var parseData, stringify;
+        var stringify;
         return __generator(this, function (_a) {
-            parseData = JSON.parse(req.body);
-            stringify = JSON.stringify(parseData);
-            fs.writeFileSync("./persistence/" + parseData.date, stringify);
+            stringify = JSON.stringify(req.body);
+            fs.writeFileSync("./persistence/" + req.body.date, stringify);
             res.send("hello");
             return [2 /*return*/];
         });
     });
 });
-app.use(express_1.default.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.get("/", function (req, res) {
     res.send("hi");
 });

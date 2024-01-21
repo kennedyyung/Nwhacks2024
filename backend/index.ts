@@ -51,9 +51,9 @@ app.use(express.json() as RequestHandler);
 // });
 
 app.post("/enterData", async function(req: Request, res: Response) {
-    let parseData = JSON.parse(req.body);
-    let stringify = JSON.stringify(parseData);
-    fs.writeFileSync("./persistence/" + parseData.date, stringify)
+    // let parseData = JSON.parse(req.body);
+    let stringify = JSON.stringify(req.body);
+    fs.writeFileSync("./persistence/" + req.body.date, stringify)
     res.send("hello");
 });
 
