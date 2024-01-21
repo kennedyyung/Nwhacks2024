@@ -45,6 +45,10 @@ app.post('/api', async function(req: Request, res: Response) {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.get("/", (req, res) => {
+    res.send("hi");
+})
+
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
