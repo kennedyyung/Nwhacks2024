@@ -3,6 +3,7 @@ import '../App.css'
 import DrawerComponent from '../Components/DrawerComponent';
 import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar";
+import TrackingDrawerWithData from '../Components/TrackingDrawerWithData';
 
 
 
@@ -10,9 +11,9 @@ function Home() {
     return (
         <>
             <NavBar />
-            <div className="bg-aqua_blue h-screen">
-                <h1 className="pl-7 pt-10 text-5xl text-white font-Rubik font-[500]">Calendar</h1>
-                <p className="pl-7 pt-2 text-white font-Rubik">Track your health day-by-day</p>
+            <div className="bg-aqua_blue h-screen font-Rubik">
+                <h1 className="pl-7 pt-10 text-4xl text-white font-Rubik font-[500]">Calendar</h1>
+                <p className="pl-7 pt-1 text-xl text-white font-Rubik font-[300]">Track your health day-by-day</p>
 
 
 
@@ -99,134 +100,86 @@ function Home() {
                                                 <DrawerComponent buttonText="7" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">8</p>
-                                                </div>
+                                            <DrawerComponent buttonText="8" />
 
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">9</p>
-                                                </div>
+                                            <DrawerComponent buttonText="9" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">10</p>
-                                                </div>
+                                            <TrackingDrawerWithData buttonLabel="10" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">11</p>
-                                                </div>
+                                            <TrackingDrawerWithData buttonLabel="11" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">12</p>
-                                                </div>
+                                            <DrawerComponent buttonText="12" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">13</p>
-                                                </div>
+                                            <DrawerComponent buttonText="13" />
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">14</p>
-                                                </div>
+                                            <DrawerComponent buttonText="14" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">15</p>
-                                                </div>
+                                            <DrawerComponent buttonText="15" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">16</p>
-                                                </div>
+                                            <DrawerComponent buttonText="16" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">17</p>
-                                                </div>
+                                            <DrawerComponent buttonText="17" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">18</p>
-                                                </div>
+                                            <DrawerComponent buttonText="18" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">19</p>
-                                                </div>
+                                            <DrawerComponent buttonText="19" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">20</p>
-                                                </div>
+                                            <DrawerComponent buttonText="20" />
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">21</p>
-                                                </div>
+                                            <DrawerComponent buttonText="21" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">22</p>
-                                                </div>
+                                            <DrawerComponent buttonText="22" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">23</p>
-                                                </div>
+                                            <DrawerComponent buttonText="23" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">24</p>
-                                                </div>
+                                            <DrawerComponent buttonText="24" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">25</p>
-                                                </div>
+                                            <DrawerComponent buttonText="25" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">26</p>
-                                                </div>
+                                            <DrawerComponent buttonText="26" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">27</p>
-                                                </div>
+                                            <DrawerComponent buttonText="27" />
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">28</p>
-                                                </div>
+                                            <DrawerComponent buttonText="28" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">29</p>
-                                                </div>
+                                            <DrawerComponent buttonText="29" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">30</p>
-                                                </div>
+                                            <DrawerComponent buttonText="30" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">31</p>
-                                                </div>
+                                            <DrawerComponent buttonText="31" />
                                             </td>
                                         </tr>
                                     </tbody>
@@ -287,155 +240,96 @@ function Home() {
                                                 <div className="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
-                                                <div className="px-3 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">1</p>
-                                                </div>
+                                                <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">2</p>
-                                                </div>
+                                                <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">3</p>
-                                                </div>
+                                                <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">4</p>
-                                                </div>
+                                            <DrawerComponent buttonText="1" />
                                             </td>
                                             <td >
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">5</p>
-                                                </div>
+                                            <DrawerComponent buttonText="2" />
                                             </td>
                                             <td >
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">6</p>
-                                                </div>
+                                            <DrawerComponent buttonText="3" />
                                             </td>
 
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">7</p>
-                                                </div>
+                                            <DrawerComponent buttonText="4" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">8</p>
-                                                </div>
-                                                {/* <div className="w-full h-full">
-                                
-                                <div className="flex items-center justify-center w-full rounded-full cursor-pointer">
-                                    <a  role="link" tabindex="0" className="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-500 hover:bg-indigo-500 text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-indigo-700 rounded-full">8</a>
-                                </div>
-                            </div> */}
+                                            <DrawerComponent buttonText="5" />
+                                                
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">9</p>
-                                                </div>
+                                            <DrawerComponent buttonText="6" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">10</p>
-                                                </div>
+                                            <DrawerComponent buttonText="7" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">11</p>
-                                                </div>
+                                            <DrawerComponent buttonText="8" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">12</p>
-                                                </div>
+                                            <DrawerComponent buttonText="9" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">13</p>
-                                                </div>
+                                            <DrawerComponent buttonText="10" />
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">14</p>
-                                                </div>
+                                            <DrawerComponent buttonText="11" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">15</p>
-                                                </div>
+                                            <DrawerComponent buttonText="12" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">16</p>
-                                                </div>
+                                            <DrawerComponent buttonText="13" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">17</p>
-                                                </div>
+                                            <DrawerComponent buttonText="14" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">18</p>
-                                                </div>
+                                            <DrawerComponent buttonText="15" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">19</p>
-                                                </div>
+                                            <DrawerComponent buttonText="16" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">20</p>
-                                                </div>
+                                            <DrawerComponent buttonText="17" />
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">21</p>
-                                                </div>
+                                            <DrawerComponent buttonText="18" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">22</p>
-                                                </div>
+                                            <DrawerComponent buttonText="19" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">23</p>
-                                                </div>
+                                            <DrawerComponent buttonText="20" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">24</p>
-                                                </div>
+                                            <DrawerComponent buttonText="21" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500 ">25</p>
-                                                </div>
+                                            <DrawerComponent buttonText="22" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">26</p>
-                                                </div>
+                                            <DrawerComponent buttonText="23" />
                                             </td>
                                             <td>
-                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-                                                    <p className="text-base text-gray-500  font-medium">27</p>
-                                                </div>
+                                            <DrawerComponent buttonText="24" />
                                             </td>
                                         </tr>
 
