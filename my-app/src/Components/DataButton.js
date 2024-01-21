@@ -13,12 +13,12 @@ const DataButton = () => {
     dizziness : false,
     fatigue : true,
     headache : false,
-    soreness : true,
+    soreness : false,
     congestion : false,
     soreThroat : false,
     diarrhea : false,
-    constipation : true,
-    heartBurn : true,
+    constipation : false,
+    heartBurn : false,
     runnyNose : false,
     other : false,
     noSymptoms : false,
@@ -32,10 +32,10 @@ const DataButton = () => {
 			{
 				method: 'POST',
 				headers: {'Content-Type': 'application/json'},
-				// body: JSON.stringify(formInfo),
-                body: JSON.stringify(formInfo),
+				body: JSON.stringify(formInfo),
+        // body: JSON.stringify({hi: "hi"}),
 			}
-		fetch('http://localhost:8080/enterData/', requestBody)
+		fetch('http://172.20.10.10:8080/enterData', requestBody)
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(`${response.status}`);
