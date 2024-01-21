@@ -6,10 +6,10 @@ function NavBar() {
 
 
         <div class="fixed z-50 w-full h-20 max-w-lg -translate-x-1/2 bg-medium_purple rounded-full bottom-4 left-1/2 ">
-            <div class="grid h-full max-w-lg grid-cols-3 mx-auto ">
+            <div class="grid h-full max-w-lg grid-cols-3 mx-auto mt-5 ml-11">
 
                 <Link to="/Analysis">
-                    <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5  rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group h-50">
+                    <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-3 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group h-50">
                         <img
                             src="/Analysis.png"
                         />
@@ -18,7 +18,7 @@ function NavBar() {
 
 
                 <Link to="/">
-                    <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group h-50">
+                    <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-6 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group h-50">
                         <img
                             src="/Track.png"
                         />
@@ -26,6 +26,7 @@ function NavBar() {
                 </Link>
 
 
+                <Link to="/Profile">
                 <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 h-50" >
                     <img
                         src="/Profile.png"
@@ -33,6 +34,7 @@ function NavBar() {
 
                     />
                 </button>
+                </Link>
 
             </div>
         </div>
