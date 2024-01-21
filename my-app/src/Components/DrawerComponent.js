@@ -1,64 +1,4 @@
-
-
-// import React from 'react';
-
-// const DrawerComponent = () => {
-//   return (
-//     <div className="drawer drawer-bottom">
-//       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-//       <div className="drawer-content">
-//         {/* Page content here */}
-//         <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label>
-//       </div> 
-//       <div className="drawer-side">
-//         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-//         <ul className="menu p-4 h-80 min-w-full bg-base-200 text-base-content">
-//           {/* Sidebar content here */}
-//           <li><a>Sidebar Item 1</a></li>
-//           <li><a>Sidebar Item 2</a></li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default DrawerComponent;
-
-
-
-// DrawerComponent.js
-
-// import React from 'react';
-
-// const DrawerComponent = () => {
-//   return (
-//     <div className="drawer drawer-bottom">
-//       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-//       <div className="drawer-content">
-//         {/* Page content here */}
-//         <label htmlFor="my-drawer-4" className="drawer-button">
-//           <div className="px-3 py-3 cursor-pointer flex w-full justify-center bg-light_purple rounded-lg">
-//             <p className="text-base text-gray-500 font-medium">1</p>
-//           </div>
-//         </label>
-//       </div> 
-//       <div className="drawer-side">
-//         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-//         <ul className="menu p-4 h-80 min-w-full bg-base-200 text-base-content">
-//           {/* Sidebar content here */}
-//           <li><a>Sidebar Item 1</a></li>
-//           <li><a>Sidebar Item 2</a></li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default DrawerComponent;
-
-
-
-// DrawerComponent.js
+import { Link } from "react-router-dom";
 
 import React from 'react';
 
@@ -80,13 +20,23 @@ const DrawerComponent = ({ buttonText }) => {
           {/* Sidebar content here */}
           <p >Health Tracked {Date}</p>
 
-          <div className=" mt-10 card w-76 bg-slate-100">
-            <div className="card-body flex items-center justify-center">
+          <div className=" mt-5 card w-76 bg-slate-100">
+            <div className="card-body flex items-center justify-center font-Rubik">
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
               <p>No health tracked yet</p>
-            <div className="card-actions justify-end">
+              <p> </p>
+              <p> </p>
+              <p> </p>
+              <p> </p>
+
+            </div>
           </div>
-  </div>
-</div>
+          <Link to="/Tracking">
+          <button type="button" class="text-white bg-aqua_blue focus:outline-none font-Rubik rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 mt-5">Track</button>
+          </Link>
         </ul>
       </div>
     </div>

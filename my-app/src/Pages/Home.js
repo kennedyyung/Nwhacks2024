@@ -15,9 +15,6 @@ function Home() {
                 <p className="pl-7 pt-2 text-white font-Rubik">Track your health day-by-day</p>
 
 
-                <Link to="/Analysis">Analysis</Link>
-
-
 
                 <div class="flex items-center justify-center py-10 h-screen">
 
