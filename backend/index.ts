@@ -3,6 +3,7 @@ import {Length, IsString, Validate, validate} from "class-validator";
 import cors from "cors";
 import {plainToClass} from "class-transformer";
 import * as fs from 'fs-extra';
+import { readFileSync } from "fs";
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -51,7 +52,6 @@ app.use(express.json() as RequestHandler);
 // });
 
 app.post("/enterData", async function(req: Request, res: Response) {
-    // let parseData = JSON.parse(req.body);
     let stringify = JSON.stringify(req.body);
     fs.writeFileSync("./persistence/" + req.body.date, stringify)
     res.send("hello");
@@ -59,8 +59,14 @@ app.post("/enterData", async function(req: Request, res: Response) {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get("/", (req, res) => {
-    res.send("hi");
+// app.get("/", (req, res) => {
+//     res.send("hi");
+// })
+
+app.get("/getData/01-24-2024", (req, res) => {
+  res.json(JSON.stringify(readFileSync('./persistence/01-24-2024')));
+  console.log(res.json);
+  console.log("sending hi");  
 })
 
 // Start the server

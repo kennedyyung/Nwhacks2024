@@ -71,6 +71,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var class_validator_1 = require("class-validator");
 var cors_1 = __importDefault(require("cors"));
 var fs = __importStar(require("fs-extra"));
+var fs_1 = require("fs");
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require('path');
@@ -124,8 +125,13 @@ app.post("/enterData", function (req, res) {
     });
 });
 app.use(express.static(path.join(__dirname, 'build')));
-app.get("/", function (req, res) {
-    res.send("hi");
+// app.get("/", (req, res) => {
+//     res.send("hi");
+// })
+app.get("/getData/01-21-2024", function (req, res) {
+    res.json(JSON.stringify((0, fs_1.readFileSync)('./persistence/01-24-2024')));
+    console.log(res.json);
+    console.log("sending hi");
 });
 // Start the server
 var PORT = process.env.PORT || 8080;
