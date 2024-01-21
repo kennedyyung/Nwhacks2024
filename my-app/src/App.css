@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+body {
+  background-color: #80CED7; /* Replace 'aqua' with the specific shade of blue you want */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
