@@ -13,7 +13,7 @@
    
 
 //     return (
-//             <button type="button" class="bg-white border border-text_colour font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 " onClick={handleButtonClick}>
+//             <button type="button" className="bg-white border border-text_colour font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 " onClick={handleButtonClick}>
 //                 {buttonName}
 //                 </button>
 
@@ -27,7 +27,7 @@ import React, { useState } from 'react';
 const SymptomButton = ({ buttonName }) => {
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleButtonClick = () => {
+  const handleButtonColor = () => {
     //Handle button on click logic
     setIsClicked(!isClicked);
     console.log("pressed");
@@ -40,7 +40,7 @@ const buttonClassName = isClicked
 
   return (
     <div>
-      <button type="button" className={buttonClassName} onClick={handleButtonClick}>
+      <button type="button" className={buttonClassName} onClick={handleButtonColor}> 
         {buttonName}
       </button>
     </div>

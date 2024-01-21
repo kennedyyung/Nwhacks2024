@@ -33,6 +33,7 @@ import Analysis from './Pages/Analysis';
 import Home from "./Pages/Home"
 import NavBar from "./Components/NavBar";
 import Tracking from './Pages/Tracking';
+import Profile from './Pages/Profile';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
   },
   {
     path: "/Tracking", element: <Tracking/>
+  },
+  {
+    path: "/Profile", element: <Profile/>
   }
 ]);
 
