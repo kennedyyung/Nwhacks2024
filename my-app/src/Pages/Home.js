@@ -17,62 +17,62 @@ function Home() {
 
 
 
-                <div class="flex items-center justify-center py-10 h-screen">
+                <div className="flex items-center justify-center py-10 h-screen">
 
-                    <div class=" w-full h-full">
-                        <div class="md:p-8 p-5 dark:bg-gray-800 bg-white rounded-4xl h-full">
-                            <div class="px-4 flex items-center justify-between">
-                                <span class="pt-4 text-lg text-base font-Rubik text-text_colour ">January 2024</span>
-                                <div class="flex items-center">
+                    <div className=" w-full h-full">
+                        <div className="md:p-8 p-5 dark:bg-gray-800 bg-white rounded-4xl h-full">
+                            <div className="px-4 flex items-center justify-between">
+                                <span className="pt-4 text-lg text-base font-Rubik text-text_colour ">January 2024</span>
+                                <div className="flex items-center">
 
 
                                 </div>
                             </div>
-                            <div class="flex items-center justify-between pt-5 overflow-x-auto">
-                                <table class="w-full">
+                            <div className="flex items-center justify-between pt-5 overflow-x-auto">
+                                <table className="w-full">
                                     <thead>
                                         <tr>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">S</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">S</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">M</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">M</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">T</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">T</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">W</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">W</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">T</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">T</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">F</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">F</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">S</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">S</p>
                                                 </div>
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="pt-6">
-                                                <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
+                                            <td className="pt-6">
+                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
                                                 <DrawerComponent buttonText="1" />
@@ -186,58 +186,58 @@ function Home() {
                                 </table>
                             </div>
 
-                            <div class="px-4 flex items-center justify-between">
-                                <span class="pt-8 text-lg text-base font-Rubik text-text_colour">February 2024</span>
-                                <div class="flex items-center">
+                            <div className="px-4 flex items-center justify-between">
+                                <span className="pt-8 text-lg text-base font-Rubik text-text_colour">February 2024</span>
+                                <div className="flex items-center">
 
 
                                 </div>
                             </div>
-                            <div class="flex items-center justify-between pt-5 overflow-x-auto">
-                                <table class="w-full">
+                            <div className="flex items-center justify-between pt-5 overflow-x-auto">
+                                <table className="w-full">
                                     <thead>
                                         <tr>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">S</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">S</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">M</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">M</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">T</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">T</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">W</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">W</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">T</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">T</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">F</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">F</p>
                                                 </div>
                                             </th>
                                             <th>
-                                                <div class="w-full h-9 flex justify-center">
-                                                    <p class="text-base font-medium text-center text-text_colour ">S</p>
+                                                <div className="w-full h-9 flex justify-center">
+                                                    <p className="text-base font-medium text-center text-text_colour ">S</p>
                                                 </div>
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="pt-6">
-                                                <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
+                                            <td className="pt-6">
+                                                <div className="px-2 py-3 cursor-pointer flex w-full justify-center"></div>
                                             </td>
                                             <td >
                                                 <div class="px-2 py-3 cursor-pointer flex w-full justify-center"></div>

@@ -33,7 +33,7 @@ const DrawerComponent = ({ buttonText }) => {
             </div>
           </div>
           <Link to="/Tracking">
-          <button type="button" class="text-white bg-aqua_blue font-Rubik rounded-full text-sm px-40 py-2.5 text-center me-2 mb-2 mt-5">Track</button>
+          <button type="button" className="text-white bg-aqua_blue font-Rubik rounded-full text-sm px-40 py-2.5 text-center me-2 mb-2 mt-5">Track</button>
           </Link>
         </ul>
       </div>
